@@ -1,25 +1,25 @@
 class Jurl < Formula
   desc "curl that reads the page for you: decision models pick the paragraphs, links, code and images that matter"
   homepage "https://jurl.dev"
-  version "0.1.12"
+  version "0.1.13"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rayoplateado/jurl/releases/download/v0.1.12/jurl-aarch64-apple-darwin.tar.xz"
-      sha256 "34378e43279b65c2d56e0e98249344d4b41a6e427e918c091e81cf0cd9085167"
+      url "https://github.com/rayoplateado/jurl/releases/download/v0.1.13/jurl-aarch64-apple-darwin.tar.xz"
+      sha256 "fb1f8994e32c5efca45fc1e27d70b8437420168bb3b8644d3fb1a6d6b8eaf4f5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rayoplateado/jurl/releases/download/v0.1.12/jurl-x86_64-apple-darwin.tar.xz"
-      sha256 "2bfa71c401dc251b5ab3da52b2fa8ac8f70e3cd7d572d43129879227ec75bdcc"
+      url "https://github.com/rayoplateado/jurl/releases/download/v0.1.13/jurl-x86_64-apple-darwin.tar.xz"
+      sha256 "7963448666545980b52d34bf9af95d250f317195e09e20e09adce755ffd72fd1"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rayoplateado/jurl/releases/download/v0.1.12/jurl-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a0648b3fa5fc843c75af28e8a104e417c710bf69c87bb5ab4f9e19275e564e3c"
+      url "https://github.com/rayoplateado/jurl/releases/download/v0.1.13/jurl-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "4700a13afd92e2c1a2decde4562247e44b13b3903d7ab57904cc20d48fb65a37"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rayoplateado/jurl/releases/download/v0.1.12/jurl-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7b5f5daac5fe67658f2b85c82fbf5f481701d1e18bfad314437e340628d643e6"
+      url "https://github.com/rayoplateado/jurl/releases/download/v0.1.13/jurl-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "39c05521e601a2be38d484a55ca75adf68abf2d53ec2833ebda7265f5d80dae5"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
